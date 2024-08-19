@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Reader</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Audio Reader</h1>
+            <div class="header-buttons">
+                <button id="modeToggle">Toggle Dark/Light Mode</button>
+                <input type="file" id="folderUpload" webkitdirectory directory mozdirectory multiple />
+            </div>
+        </header>
+        <input type="text" id="search" placeholder="Search files..." />
+        <div class="main-content">
+            <div class="left-side">
+                <iframe id="pdfViewer" type="application/pdf"></iframe>
+            </div>
+            <div class="right-side">
+                <div class="audio-controls">
+                    <audio id="audioPlayer" controls></audio>
+                </div>
+                <div class="playlist">
+                    <div class="pdf-list">
+                        <h3>PDF Files</h3>
+                        <ul id="pdfFileList"></ul>
+                    </div>
+                    <div class="mp3-list">
+                        <h3>MP3 Files</h3>
+                        <ul id="mp3FileList"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

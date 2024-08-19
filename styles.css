@@ -1,0 +1,135 @@
+/* Default styling for dark mode */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #1e1e1e;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+}
+
+button, input[type="file"] {
+    background-color: #333;
+    color: #e0e0e0;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button:hover, input[type="file"]:hover {
+    background-color: #555;
+}
+
+input[type="file"] {
+    margin-top: 0;
+}
+
+#search {
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid #666;
+    border-radius: 3px;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+.main-content {
+    display: flex;
+    flex: 1;
+}
+
+.left-side, .right-side {
+    padding: 10px;
+    overflow: auto;
+}
+
+.left-side {
+    flex: 3; /* 3/4ths of the width */
+}
+
+.right-side {
+    flex: 1; /* 1/4th of the width */
+    display: flex;
+    flex-direction: column;
+}
+
+.audio-controls {
+    margin-bottom: 10px;
+}
+
+iframe {
+    width: 100%;
+    height: calc(100vh - 60px); /* Adjust height to fit content */
+    border: none;
+}
+
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.playlist {
+    display: flex;
+    flex: 1;
+    margin-top: 10px;
+}
+
+.pdf-list, .mp3-list {
+    flex: 1;
+    margin: 5px;
+}
+
+.pdf-list ul, .mp3-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pdf-list li, .mp3-list li {
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+/* Light mode styling */
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.light-mode header {
+    background-color: #f0f0f0;
+}
+
+body.light-mode button, body.light-mode input[type="file"], body.light-mode #search {
+    background-color: #ddd;
+    color: #000;
+}
+
+body.light-mode button:hover, body.light-mode input[type="file"]:hover, body.light-mode #search:hover {
+    background-color: #bbb;
+}
+
+body.light-mode iframe {
+    border: none;
+}
